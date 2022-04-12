@@ -9,7 +9,9 @@ This workflow utilizes both Google Earth Engine (GEE) and the National Water Inf
 Additional "explorations" notebooks have been included showing more of the process completed to finalize the workflow.
 
 Combined workflow: RIMORPHIS workflow.ipynb
+
 Hydrofunctions workflow: Hydrofunctions_discharge_KJT_04032022.ipynb
+
 Google Earth Engine workflow: GEE_sentinel2_MSgage_KJT_04032022.ipynb
 
 ## Input Data Required
