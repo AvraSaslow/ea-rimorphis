@@ -1,7 +1,9 @@
 # Earth Lab + RIMORPHIS
 
 _Authors:_
+
 _Avra Saslow_
+
 _Kristen Tortorelli_
 
 This repository is for a research project focused on improving flood detection with a focus on comparing stream gage discharge data against satellite imagery to determine at which point we can detect overbank flooding. We're working in conjunction with the NSF funded project [RIMORPHIS](https://rimorphis.org/) to ultimately assist in modeling streamflow and sediment transport across the US.
