@@ -31,21 +31,21 @@ Installation instructions for the earth analytics python environment can be foun
 
 ## Workflow 
 
-1. a. Use hydrofunctions library to download stream gage data for each location, save to pd dataframe
-1. b. Pick time series for that river location (1-2 years)
+1. Use hydrofunctions library to download stream gage data for each location, save to pd dataframe
+2. Pick time series for that river location (1-2 years)
 
-2. Stream gage analysis
-2. a. Plot the time series of discharge (matplotlib), observe patterns, seasonality, progression of discharge/gage height, etc.
-2. b. Select time period (6  months) around flood event and extract max discharge value for each month
-2. c. Save max discharge values to new pd dataframe
+Stream gage analysis
+3. Plot the time series of discharge (matplotlib), observe patterns, seasonality, progression of discharge/gage height, etc.
+4. Select time period (6  months) around flood event and extract max discharge value for each month
+5. Save max discharge values to new pd dataframe
 
-3. Satellite analysis
-3. a. Generate images for each site that match dates of high discharge values for each month of time period (6 months)
-3. b. Filter/clean up images as required (remove clouds, etc...)
-3. c. Classify water pixels for each image, generate water pixel counts 
-3. d. Save water pixel count values to max discharge dataframe, append with date column
+Satellite analysis
+6. Generate images for each site that match dates of high discharge values for each month of time period (6 months)
+7. Filter/clean up images as required (remove clouds, etc...)
+8. Classify water pixels for each image, generate water pixel counts 
+9. Save water pixel count values to max discharge dataframe, append with date column
 
-4. Plot max discharge values for each location on x-axis vs flooded extent (water pixel count) on y-axis using matplotlib
+10. Plot max discharge values for each location on x-axis vs flooded extent (water pixel count) on y-axis using matplotlib
 
 
 ## Notebooks
