@@ -42,7 +42,7 @@ Stream gage analysis
 Satellite analysis
 6. Generate images for each site that match dates of high discharge values for each month of time period (6 months)
 7. Filter/clean up images as required (remove clouds, etc...)
-8. Classify water pixels for each image, generate water pixel counts 
+8. Classify water pixels for each image, generate water pixel counts
 9. Save water pixel count values to max discharge dataframe, append with date column
 
 10. Plot max discharge values for each location on x-axis vs flooded extent (water pixel count) on y-axis using matplotlib
