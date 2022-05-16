@@ -7,10 +7,10 @@ This workflow utilizes both Google Earth Engine (GEE) and the National Water Inf
 
 ## Table of Contents
 * [Development Environment](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#development-environment)
-* [Workflow](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#workflow)
-* [Notebooks](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#notebooks)
-* [References](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#references)
-* [Contact](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#project-contacts)
+* [Workflow](https://github.com/AvraSaslow/ea-rimorphis#workflow)
+* [Notebooks](https://github.com/AvraSaslow/ea-rimorphis#notebooks)
+* [References](https://github.com/AvraSaslow/ea-rimorphis#references)
+* [Contact](https://github.com/AvraSaslow/ea-rimorphis#project-contacts)
 
 ## Project Purpose and Goals
 The premise of this research project is to contextualize flooding with satellite data, rather than relying on stream gage data to indicate whether or not water levels are above a flood threshold. It's important to model overbank flooding because it's crucial to understand _where_ and _how_ exactly a landscape floods. The ability to monitor and predict the extent of flooding across a landscape is critical for managing phenomena such as agricultural irrigation and habitat conservation. 
@@ -51,9 +51,15 @@ Installation instructions for the earth analytics python environment can be foun
 ## Notebooks
 Additional "explorations" notebooks have been included showing more of the process completed to finalize the workflow.
 
+Exploratory Notebooks:
 * Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
 * Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
 * Time series automation workflow: Automation Workflow.ipynb
+* Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
+
+Working Notebook:
+* rimorphis_final_project_blog_post_saslow_tortorelli.ipynb
+
 
 ## References
 
