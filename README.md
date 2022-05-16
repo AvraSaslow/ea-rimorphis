@@ -12,6 +12,19 @@ This workflow utilizes both Google Earth Engine (GEE) and the National Water Inf
 * [References](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#references)
 * [Contact](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#project-contacts)
 
+## Project Purpose and Goals
+The premise of this research project is to contextualize flooding with satellite data, rather than relying on stream gage data to indicate whether or not water levels are above a flood threshold. It's important to model overbank flooding because it's crucial to understand _where_ and _how_ exactly a landscape floods. The ability to monitor and predict the extent of flooding across a landscape is critical for managing phenomena such as agricultural irrigation and habitat conservation. 
+
+This cannot just be done with stream gage data; stream gage data only tells us when the water level or flow is above a certain threshold. Moreover, gauging stations generally fail to provide accurate flow observations during extreme events due to the distributed complex nature of flood processes.
+
+Utilizing other data types, such as satellite imagery, can provide a better understanding of how rivers flood. It's important to see not only where on a floodplain the water travels to, but where that water carries sediment loads to as well. That's why our research is comprised of modelling where stream gage data (i.e., water volume) and satellite imagery (i.e., water area) converge, because it could give us a better understanding of _where_ water and and sediment go when water levels hit a flood level threshold.
+
+This research sits under the umbrella of a larger research effort called the River Morphology Information System, or RIMORPHIS, which is a USF-funded, collaborative project. The goal of RIMORPHIS is to create a user-friendly information system that enables its community to observe and record important variables for modeling streamflow and sediment transport across the U.S.
+
+Our piece of research fits into that mission because it evaluates if multiple methods of measurement create a stronger and more accurate model for overbank flooding, rather than relying on a single data point (such as precipitation, or stream gage data). 
+
+To narrow our scope of work, we decided to specifically study flood events at 1-3 locations that had both stream gage or stream height data and clear enough satellite images. For this stage in our study, we're simply looking to find if there is any correlation between stream gage/height data and the number of water pixels counted for the same time period in the study area. 
+
 ## Data Sources
 ### NWIS Data
 
