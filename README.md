@@ -70,4 +70,3 @@ Working Notebook:
 [@Elsa Culler](mailto:elsa.culler@colorado.edu )<br>
 
 ## Zenodo Citation
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171937.svg)](https://doi.org/10.5281/zenodo.5171937)
