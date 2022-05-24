@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
+# Import libraries
+import hydrofunctions as hf
 
 # function that finds stream gage data for any given site and time frame
 def create_stream_gage_df(site, start, end):
