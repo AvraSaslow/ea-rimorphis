@@ -45,6 +45,9 @@ Installation instructions for the earth analytics python environment can be foun
 
 ## Workflow
 
+### How to Run Workflow 
+Navigate to the rimorphis_final_project_blog_post_saslow_tortorelli.ipynb file in this repository. Run this workbook, and follow the authentication steps that appear for using GEE. Once you have provided your credentials, copy the authentication token into the notebook to complete authentication process. At the end of the notebook, an html file is exported to the working directory. 
+
 ![workflow diagram](Assets/workflow.png)
 
 
