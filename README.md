@@ -68,3 +68,6 @@ Working Notebook:
 [@Avra Saslow](mailto:avra.saslow@colorado.edu)<br>
 [@Kristen Tortorelli](mailto:kristen.tortorelli@colorado.edu)<br>
 [@Elsa Culler](mailto:elsa.culler@colorado.edu )<br>
+
+## Zenodo Citation
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2842910.svg)](https://doi.org/10.5281/zenodo.2842910)
