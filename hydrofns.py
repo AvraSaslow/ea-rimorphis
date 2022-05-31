@@ -24,23 +24,30 @@ def create_stream_gage_df(site, start, end):
     response_df : dataframe
         Dataframe created from downloaded csv    """
 
-    # Generate dataframe from NWIS for gage discharge data at specified sites
-    response = hf.NWIS(site, 'dv', start, end, parameterCd='00060')
-    response_df = response.df()
+    if start > end:
+        print("Start date must be prior to end date.")
+        
+    else:
+        try:
+            # Generate dataframe from NWIS for gage discharge data at specified sites
+            response = hf.NWIS(site, 'dv', start, end, parameterCd='00060')
+            response_df = response.df()
+        except ValueError:
+            print("This site number does not exist. Please use a valid NWIS site number.")
 
-    # Rename columns for discharge and flags
-    response_df.columns = ('discharge', 'qualifiers')
+        # Rename columns for discharge and flags
+        response_df.columns = ('discharge', 'qualifiers')
 
-    # Add column for site name
-    response_df["sitename"] = hf.get_nwis_property(
-        response.json, key='siteName')[0]
+        # Add column for site name
+        response_df["sitename"] = hf.get_nwis_property(
+            response.json, key='siteName')[0]
 
-    # Add columns for gage location latitude and longitude
-    geolocation = hf.get_nwis_property(response.json, key='geoLocation')[0]
-    response_df["latitude"] = geolocation["geogLocation"]["latitude"]
-    response_df["longitude"] = geolocation["geogLocation"]["longitude"]
+        # Add columns for gage location latitude and longitude
+        geolocation = hf.get_nwis_property(response.json, key='geoLocation')[0]
+        response_df["latitude"] = geolocation["geogLocation"]["latitude"]
+        response_df["longitude"] = geolocation["geogLocation"]["longitude"]
 
-    return response_df
+        return response_df
 
 # function that finds stream gage height data for any given site and time frame
 
@@ -63,13 +70,28 @@ def create_df_gageht(site, start, end):
     -------
     response_df : dataframe
         Dataframe created from downloaded csv    """
+    if start > end:
+        print("Start date must be prior to end date.")
+        
+    else:
+        try:
+            # Generate dataframe from NWIS for gage discharge data at specified sites
+            response = hf.NWIS(site, 'dv', start, end, parameterCd='00065')
+            response_df = response.df()
+        except ValueError:
+            print("This site number does not exist. Please use a valid NWIS site number.")
 
-    # Generate dataframe from NWIS for gage discharge data at specified sites
-    response = hf.NWIS(site, 'dv', start, end, parameterCd='00065')
-    response_df = response.df()
+        # Rename columns for discharge and flags
+        response_df.columns = ('gage ht', 'qualifiers')
 
-    # Rename columns for discharge and flags
-    response_df.columns = ('gage ht', 'qualifiers')
+        # Add column for site name
+        response_df["sitename"] = hf.get_nwis_property(
+            response.json, key='siteName')[0]
 
-    return response_df
+        # Add columns for gage location latitude and longitude
+        geolocation = hf.get_nwis_property(response.json, key='geoLocation')[0]
+        response_df["latitude"] = geolocation["geogLocation"]["latitude"]
+        response_df["longitude"] = geolocation["geogLocation"]["longitude"]
+
+        return response_df
 
