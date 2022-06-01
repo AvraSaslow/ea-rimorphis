@@ -6,11 +6,14 @@ Authors: Avra Saslow & Kristen Tortorelli
 This workflow utilizes both Google Earth Engine (GEE) and the National Water Information System (NWIS).
 
 ## Table of Contents
-* [Development Environment](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#development-environment)
+* [Project Purpose and Goals](https://github.com/AvraSaslow/ea-rimorphis#project-purpose-and-goals)
+* [Data Sources](https://github.com/AvraSaslow/ea-rimorphis#data-sources)
+* [Development Environment](https://github.com/AvraSaslow/ea-rimorphis#development-environment)
 * [Workflow](https://github.com/AvraSaslow/ea-rimorphis#workflow)
 * [Notebooks](https://github.com/AvraSaslow/ea-rimorphis#notebooks)
 * [References](https://github.com/AvraSaslow/ea-rimorphis#references)
 * [Contact](https://github.com/AvraSaslow/ea-rimorphis#project-contacts)
+* [Citation](https://github.com/AvraSaslow/ea-rimorphis#zenodo-citation)
 
 ## Project Purpose and Goals
 The premise of this research project is to contextualize flooding with satellite data, rather than relying on stream gage data to indicate whether or not water levels are above a flood threshold. It's important to model overbank flooding because it's crucial to understand _where_ and _how_ exactly a landscape floods. The ability to monitor and predict the extent of flooding across a landscape is critical for managing phenomena such as agricultural irrigation and habitat conservation.
@@ -53,7 +56,7 @@ Simply follow the instructions to run this project from source above:
 * Clone this repository onto your local machine
 * Run `jupyter notebook` within this repository's folder in terminal
 * Wait for the Jupyter Notebook GUI to load - navigate to the rimorphis_final_project_blog_post_saslow_tortorelli.ipynb file
-* Navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook. 
+* Navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook.
 
 ![workflow diagram](Assets/workflow.png)
 
