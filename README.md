@@ -53,7 +53,7 @@ Simply follow the instructions to run this project from source above:
 * Clone this repository onto your local machine
 * Run `jupyter notebook` within this repository's folder in terminal
 * Wait for the Jupyter Notebook GUI to load - navigate to the rimorphis_final_project_blog_post_saslow_tortorelli.ipynb file
-* Select `run all`. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook. 
+* Navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook. 
 
 ![workflow diagram](Assets/workflow.png)
 
