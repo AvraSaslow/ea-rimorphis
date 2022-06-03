@@ -6,14 +6,17 @@ Authors: Avra Saslow & Kristen Tortorelli
 This workflow utilizes both Google Earth Engine (GEE) and the National Water Information System (NWIS).
 
 ## Table of Contents
-* [Development Environment](https://github.com/earthlab-education/final-project-group-blog-post-rimorphis#development-environment)
+* [Project Purpose and Goals](https://github.com/AvraSaslow/ea-rimorphis#project-purpose-and-goals)
+* [Data Sources](https://github.com/AvraSaslow/ea-rimorphis#data-sources)
+* [Development Environment](https://github.com/AvraSaslow/ea-rimorphis#development-environment)
 * [Workflow](https://github.com/AvraSaslow/ea-rimorphis#workflow)
 * [Notebooks](https://github.com/AvraSaslow/ea-rimorphis#notebooks)
 * [References](https://github.com/AvraSaslow/ea-rimorphis#references)
 * [Contact](https://github.com/AvraSaslow/ea-rimorphis#project-contacts)
+* [Citation](https://github.com/AvraSaslow/ea-rimorphis#zenodo-citation)
 
 ## Project Purpose and Goals
-The premise of this research project is to contextualize flooding with satellite data, rather than relying on stream gage data to indicate whether or not water levels are above a flood threshold. It's important to model overbank flooding because it's crucial to understand _where_ and _how_ exactly a landscape floods. The ability to monitor and predict the extent of flooding across a landscape is critical for managing phenomena such as agricultural irrigation and habitat conservation. 
+The premise of this research project is to contextualize flooding with satellite data, rather than relying on stream gage data to indicate whether or not water levels are above a flood threshold. It's important to model overbank flooding because it's crucial to understand _where_ and _how_ exactly a landscape floods. The ability to monitor and predict the extent of flooding across a landscape is critical for managing phenomena such as agricultural irrigation and habitat conservation.
 
 This cannot just be done with stream gage data; stream gage data only tells us when the water level or flow is above a certain threshold. Moreover, gauging stations generally fail to provide accurate flow observations during extreme events due to the distributed complex nature of flood processes.
 
@@ -21,9 +24,9 @@ Utilizing other data types, such as satellite imagery, can provide a better unde
 
 This research sits under the umbrella of a larger research effort called the River Morphology Information System, or RIMORPHIS, which is a USF-funded, collaborative project. The goal of RIMORPHIS is to create a user-friendly information system that enables its community to observe and record important variables for modeling streamflow and sediment transport across the U.S.
 
-Our piece of research fits into that mission because it evaluates if multiple methods of measurement create a stronger and more accurate model for overbank flooding, rather than relying on a single data point (such as precipitation, or stream gage data). 
+Our piece of research fits into that mission because it evaluates if multiple methods of measurement create a stronger and more accurate model for overbank flooding, rather than relying on a single data point (such as precipitation, or stream gage data).
 
-To narrow our scope of work, we decided to specifically study flood events at 1-3 locations that had both stream gage or stream height data and clear enough satellite images. For this stage in our study, we're simply looking to find if there is any correlation between stream gage/height data and the number of water pixels counted for the same time period in the study area. 
+To narrow our scope of work, we decided to specifically study flood events at 1-3 locations that had both stream gage or stream height data and clear enough satellite images. For this stage in our study, we're simply looking to find if there is any correlation between stream gage/height data and the number of water pixels counted for the same time period in the study area.
 
 ## Data Sources
 ### NWIS Data
@@ -39,14 +42,21 @@ The National Water Information System (NWIS) provides access to water-related da
 Sentinel-2 is a wide-swath, high-resolution, multi-spectral imaging mission which supports the monitoring of vegetation, soil and water cover. Sentinel-2 data over both gage sites can be downloaded from the https://earthexplorer.usgs.gov/ site. This project's notebooks use Google Earth Engine to download Sentinel-2 images for all sites over a number of date ranges.
 
 ## Development Environment
-The notebooks were developed using Python 3.9.5 on a Mac system. The workflow utilizes packages from Google Earth Engine, Hydrofunctions, Folium, Geemap, and Matplotlib. The workbook was developed using the earth-analytics-python environment.
+The notebooks were developed using Python 3.9.5 on a Mac system. The workflow utilizes Anaconda, and packages from Google Earth Engine, Hydrofunctions, Folium, Geemap, and Matplotlib. The workbook was developed using the earth-analytics-python environment.
 
 Installation instructions for the earth analytics python environment can be found [here.](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)
 
+
 ## Workflow
 
-### How to Run Workflow 
-Navigate to the rimorphis_final_project_blog_post_saslow_tortorelli.ipynb file in this repository. Run this workbook, and follow the authentication steps that appear for using GEE. Once you have provided your credentials, copy the authentication token into the notebook to complete authentication process. At the end of the notebook, an html file is exported to the working directory. 
+### How to Run Workflow
+Simply follow the instructions to run this project from source above:
+
+* Ensure that the earth analytics python environment mentioned above is set up on your local machine. Use `conda activate <yourenvironmentname>` to activate the environment
+* Clone this repository onto your local machine
+* Run `jupyter notebook` within this repository's folder in terminal
+* Wait for the Jupyter Notebook GUI to load - navigate to the rimorphis_final_project_blog_post_saslow_tortorelli.ipynb file
+* Navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook.
 
 ![workflow diagram](Assets/workflow.png)
 
