@@ -40,20 +40,11 @@ This repository has a few organizational notebooks that comprise of the project.
   * Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
   * Time series automation workflow: Automation Workflow.ipynb
   * Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
+* Two folders for the final blog that details the project:
+  * One that provides the outline and drafts
+  * A secondary folder that contains the final copy of the blog
 
-given throughout the 
-
-
-Additional "explorations" notebooks have been included showing more of the process completed to finalize the workflow.
-
-Exploratory Notebooks:
-* Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
-* Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
-* Time series automation workflow: Automation Workflow.ipynb
-* Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
-
-Working Notebook:
-* rimorphis_final_project_blog_post_saslow_tortorelli.ipynb
+Unless you want to replicate the project yourself or look through the intermediary steps, the only directory you'll need to navigate to is the [final blog](https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog). This has both the write-up explaining the project and the python notebooks for you to actually run through the code and workflow. 
 
 
 ## Data Sources
