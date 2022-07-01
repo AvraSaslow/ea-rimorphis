@@ -1,6 +1,4 @@
-# Earth Lab + RIMORPHIS
-
-## How Much Water Makes a Flood?
+# Earth Lab + RIMORPHIS: How Much Water Makes a Flood?
 
 Authors: Avra Saslow & Kristen Tortorelli
 
@@ -65,6 +63,20 @@ Simply follow the instructions to run this project from source above:
 
 
 ## Notebooks
+
+This repository has a few organizational notebooks that comprise of the project. These include:
+
+* Two folders for all presentations and intermediary reports
+* An assets folder for all images related to the project
+* A folder comprised of exploratory notebooks that were used to develop the analysis:
+  * Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
+  * Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
+  * Time series automation workflow: Automation Workflow.ipynb
+  * Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
+
+given throughout the 
+
+
 Additional "explorations" notebooks have been included showing more of the process completed to finalize the workflow.
 
 Exploratory Notebooks:
