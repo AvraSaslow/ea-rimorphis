@@ -9,9 +9,9 @@ This workflow utilizes both Google Earth Engine (GEE) and the National Water Inf
 ## Table of Contents
 * [Project Purpose and Goals](https://github.com/AvraSaslow/ea-rimorphis#project-purpose-and-goals)
 * [Repository Organization](https://github.com/AvraSaslow/ea-rimorphis#repository-organization)
-* [Data Sources](https://github.com/AvraSaslow/ea-rimorphis#data-sources)
 * [Development Environment](https://github.com/AvraSaslow/ea-rimorphis#development-environment)
 * [Workflow](https://github.com/AvraSaslow/ea-rimorphis#workflow)
+* [Data Sources](https://github.com/AvraSaslow/ea-rimorphis#data-sources)
 * [References](https://github.com/AvraSaslow/ea-rimorphis#references)
 * [Contact](https://github.com/AvraSaslow/ea-rimorphis#project-contacts)
 * [Citation](https://github.com/AvraSaslow/ea-rimorphis#zenodo-citation)
@@ -46,20 +46,6 @@ This repository has a few organizational notebooks that comprise of the project.
 
 Unless you want to replicate the project yourself or look through the intermediary steps, the only directory you'll need to navigate to is the [final blog](https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog). This has both the write-up explaining the project and the python notebooks for you to actually run through the code and workflow. 
 
-
-## Data Sources
-### NWIS Data
-
-The National Water Information System (NWIS) provides access to water-related data at over 1.5 million sites in the United States, and therefore can provide stream gage discharge data and gage height data. This project's notebooks use the hydrofunctions library from USGS to extract stream discharge and gage height data for all sites.
-
-* [Stream discharge and gage height data for the Vicksburg, Mississippi gage site](https://waterdata.usgs.gov/nwis/inventory/?site_no=07289000&agency_cd=USGS)
-* [Gage height data for Pine Bluff, Arkansas gage site](https://waterdata.usgs.gov/usa/nwis/uv?site_no=07263650)
-
-
-### Sentinel-2 data
-
-Sentinel-2 is a wide-swath, high-resolution, multi-spectral imaging mission which supports the monitoring of vegetation, soil and water cover. Sentinel-2 data over both gage sites can be downloaded from the https://earthexplorer.usgs.gov/ site. This project's notebooks use Google Earth Engine to download Sentinel-2 images for all sites over a number of date ranges.
-
 ## Development Environment
 The notebooks were developed using Python 3.9.5 on a Mac system. The workflow utilizes Anaconda, and packages from Google Earth Engine, Hydrofunctions, Folium, Geemap, and Matplotlib. The workbook was developed using the earth-analytics-python environment.
 
@@ -78,6 +64,19 @@ Simply follow the instructions to run this project from source above:
 * Navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook.
 
 ![workflow diagram](Assets/workflow.png)
+
+## Data Sources
+### NWIS Data
+
+The National Water Information System (NWIS) provides access to water-related data at over 1.5 million sites in the United States, and therefore can provide stream gage discharge data and gage height data. This project's notebooks use the hydrofunctions library from USGS to extract stream discharge and gage height data for all sites.
+
+* [Stream discharge and gage height data for the Vicksburg, Mississippi gage site](https://waterdata.usgs.gov/nwis/inventory/?site_no=07289000&agency_cd=USGS)
+* [Gage height data for Pine Bluff, Arkansas gage site](https://waterdata.usgs.gov/usa/nwis/uv?site_no=07263650)
+
+
+### Sentinel-2 data
+
+Sentinel-2 is a wide-swath, high-resolution, multi-spectral imaging mission which supports the monitoring of vegetation, soil and water cover. Sentinel-2 data over both gage sites can be downloaded from the https://earthexplorer.usgs.gov/ site. This project's notebooks use Google Earth Engine to download Sentinel-2 images for all sites over a number of date ranges.
 
 
 ## References
