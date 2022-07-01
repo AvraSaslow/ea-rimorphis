@@ -36,13 +36,8 @@ This repository has a few organizational notebooks that comprise of the project.
 * Two folders for all presentations and intermediary reports
 * An assets folder for all images related to the project
 * A folder comprised of exploratory notebooks that were used to develop the analysis:
-  * Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
-  * Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
-  * Time series automation workflow: Automation Workflow.ipynb
-  * Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
-* Two folders for the final blog that details the project:
-  * One that provides the outline and drafts
-  * A secondary folder that contains the final copy of the blog
+* Folder for the final blog that details the project:
+  * Contains images within blog, final blog ipynb and html files, and python notebooks
 
 Unless you want to replicate the project yourself or look through the intermediary steps, the only directory you'll need to navigate to is the [final blog](https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog). This has both the write-up explaining the project and the python notebooks for you to actually run through the code and workflow. 
 
@@ -55,15 +50,25 @@ Installation instructions for the earth analytics python environment can be foun
 ## Workflow
 
 ### How to Run Workflow
-Simply follow the instructions to run this project from source above:
+Simply follow the instructions to run the code for this project from source above:
 
 * Ensure that the earth analytics python environment mentioned above is set up on your local machine. Use `conda activate <yourenvironmentname>` to activate the environment
 * Clone this repository onto your local machine
 * Run `jupyter notebook` within this repository's folder in terminal
-* Wait for the Jupyter Notebook GUI to load - navigate to the rimorphis_final_project_blog_post_saslow_tortorelli.ipynb file
-* Navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook.
+* Wait for the Jupyter Notebook GUI to load - navigate to the ipynb files in the Final Blog/Python Notebooks folder of the repository 
+    * rimorphis_mississippi_images_tortorelli_saslow.ipynb: This notebook generates true color, NDWI, and water maps for the Vicksburg Mississippi site
+    * rimorphis_mississippi_pixel_count_vs_gage_plot_tortorelli_saslow.ipynb: This notebook uses hydrofunctions data and water pixel count functions to generate final pixel vs gage data plot for Vicksburg Mississippi site
+    * rimorphis_pinebluff_images_tortorelli_saslow.ipynb: This notebook generates true color, NDWI, and water maps for the Pine Bluff Arkansas site
+    * rimorphis_pinebluff_pixel_count_vs_gage_plot_tortorelli_saslow.ipynb: This notebook uses hydrofunctions data and water pixel count functions to generate final pixel vs gage data plot for Pine Bluff Arkansas site 
+* Navigate to desired notebook listed above, and then navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook.
+* Final Blog ipynb and html files have images embedded in markdown. Images contained within final blog files are in Final Blog folder. 
 
 ![workflow diagram](Assets/workflow.png)
+
+## Example Usage
+Since this project uses the GEE package to view and analyze Sentinel-2 data, and the hydrofunctions package to export and analyze stream gage data, there are no data download requirements to run this project's workflow. To run the images workflow (see 'rimorphis_mississippi_images_tortorelli_saslow.ipynb' under Final Blog/Python Notebook), select a river gage monitoring site to analyze.(https://dashboard.waterdata.usgs.gov/app/nwd/?region=lower48&aoi=default). Find geographical coordinates for a rectangle surrounding your desired study area, and insert coordinates into notebook. Navigate to the notebook's kernel and run all code cells. You may need to adjust wet and dry season start and end dates to reflect the area's actual seasons. 
+
+Once you have generated desired images, you can also run the pixel count versus gage data notebook. Navigate to the 'rimorphis_mississippi_pixel_count_vs_gage_plot_tortorelli_saslow' file in the same folder, and insert river gage monitoring site number and coordinates. Run all code cells to generate plots. Depending on what measurements are available for your USGS gage site, you may need to adjust which hydrofunctions function is called (refer to 'hydrofns.py' file in main folder) to export stream gage data. Adjust date variables as desired to study different time periods. 
 
 ## Data Sources
 ### NWIS Data
@@ -78,8 +83,6 @@ The National Water Information System (NWIS) provides access to water-related da
 
 Sentinel-2 is a wide-swath, high-resolution, multi-spectral imaging mission which supports the monitoring of vegetation, soil and water cover. Sentinel-2 data over both gage sites can be downloaded from the https://earthexplorer.usgs.gov/ site. This project's notebooks use Google Earth Engine to download Sentinel-2 images for all sites over a number of date ranges.
 
-
-## References
 
 ## Project Contacts
 
