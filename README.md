@@ -11,8 +11,8 @@ This workflow utilizes both Google Earth Engine (GEE) and the National Water Inf
 * [Repository Organization](https://github.com/AvraSaslow/ea-rimorphis#repository-organization)
 * [Development Environment](https://github.com/AvraSaslow/ea-rimorphis#development-environment)
 * [Workflow](https://github.com/AvraSaslow/ea-rimorphis#workflow)
+* [References](https://github.com/AvraSaslow/ea-rimorphis#example-usage)
 * [Data Sources](https://github.com/AvraSaslow/ea-rimorphis#data-sources)
-* [References](https://github.com/AvraSaslow/ea-rimorphis#references)
 * [Contact](https://github.com/AvraSaslow/ea-rimorphis#project-contacts)
 * [Citation](https://github.com/AvraSaslow/ea-rimorphis#zenodo-citation)
 
