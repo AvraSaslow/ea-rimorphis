@@ -2,7 +2,7 @@
 
 Authors: Avra Saslow & Kristen Tortorelli
 
-  > This repository is for a research project for improving flood detection with a focus on comparing stream gage discharge data against satellite imagery in order to determine at which point we can detect overbank flooding. We're working in conjunction with the NSF funded project RIMORPHIS to ultimately assist in modeling streamflow and overbank flooding across the US.
+  > This repository is for a research project that aims to improve flood detection with a focus on comparing stream gage discharge data against satellite imagery in order to determine at which point we can detect overbank flooding. We're working in conjunction with the NSF funded project [RIMORPHIS](https://rimorphis.org/) to ultimately assist in modeling streamflow and overbank flooding across the US.
 
 This workflow utilizes both Google Earth Engine (GEE) and the National Water Information System (NWIS).
 
@@ -47,7 +47,7 @@ This repository has a few organizational notebooks that comprise of the project.
 Unless you want to replicate the project yourself or look through the intermediary steps, the only directory you'll need to navigate to is the [final blog](https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog). This has both the write-up explaining the project and the python notebooks for you to actually run through the code and workflow. 
 
 ## Development Environment
-The notebooks were developed using Python 3.9.5 on a Mac system. The workflow utilizes Anaconda, and packages from Google Earth Engine, Hydrofunctions, Folium, Geemap, and Matplotlib. The workbook was developed using the earth-analytics-python environment.
+The notebooks were developed using Python 3.9.5 on a Mac system. The workflow utilizes Anaconda, and packages from Google Earth Engine, [Hydrofunctions](https://pypi.org/project/hydrofunctions/), [Folium](https://pypi.org/project/folium/), [Geemap](https://geemap.org/), and [Matplotlib](https://matplotlib.org/stable/users/installing/index.html). The workbook was developed using the earth-analytics-python environment.
 
 Installation instructions for the earth analytics python environment can be found [here.](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)
 
