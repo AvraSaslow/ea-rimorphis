@@ -55,7 +55,7 @@ Simply follow the instructions to run the code for this project from source abov
 * Ensure that the earth analytics python environment mentioned above is set up on your local machine. Use `conda activate <yourenvironmentname>` to activate the environment
 * Clone this repository onto your local machine
 * Run `jupyter notebook` within this repository's folder in terminal
-* Wait for the Jupyter Notebook GUI to load - navigate to the ipynb files in the [Final Blog/Python Notebooks folder]((https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog)) of the repository 
+* Wait for the Jupyter Notebook GUI to load - navigate to the ipynb files in the [Final Blog/Python Notebooks folder](https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog) of the repository 
     * rimorphis_mississippi_images_tortorelli_saslow.ipynb: This notebook generates true color, NDWI, and water maps for the Vicksburg Mississippi site
     * rimorphis_mississippi_pixel_count_vs_gage_plot_tortorelli_saslow.ipynb: This notebook uses hydrofunctions data and water pixel count functions to generate final pixel vs gage data plot for Vicksburg Mississippi site
     * rimorphis_pinebluff_images_tortorelli_saslow.ipynb: This notebook generates true color, NDWI, and water maps for the Pine Bluff Arkansas site
