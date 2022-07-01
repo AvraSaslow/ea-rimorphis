@@ -1,6 +1,6 @@
 # Earth Lab + RIMORPHIS
 
-# How Much Water Makes a Flood?
+## How Much Water Makes a Flood?
 
 Authors: Avra Saslow & Kristen Tortorelli
 
