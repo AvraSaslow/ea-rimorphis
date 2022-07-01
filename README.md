@@ -55,7 +55,7 @@ Simply follow the instructions to run the code for this project from source abov
 * Ensure that the earth analytics python environment mentioned above is set up on your local machine. Use `conda activate <yourenvironmentname>` to activate the environment
 * Clone this repository onto your local machine
 * Run `jupyter notebook` within this repository's folder in terminal
-* Wait for the Jupyter Notebook GUI to load - navigate to the ipynb files in the Final Blog/Python Notebooks folder of the repository 
+* Wait for the Jupyter Notebook GUI to load - navigate to the ipynb files in the [Final Blog/Python Notebooks folder]((https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog)) of the repository 
     * rimorphis_mississippi_images_tortorelli_saslow.ipynb: This notebook generates true color, NDWI, and water maps for the Vicksburg Mississippi site
     * rimorphis_mississippi_pixel_count_vs_gage_plot_tortorelli_saslow.ipynb: This notebook uses hydrofunctions data and water pixel count functions to generate final pixel vs gage data plot for Vicksburg Mississippi site
     * rimorphis_pinebluff_images_tortorelli_saslow.ipynb: This notebook generates true color, NDWI, and water maps for the Pine Bluff Arkansas site
@@ -66,7 +66,7 @@ Simply follow the instructions to run the code for this project from source abov
 ![workflow diagram](Assets/workflow.png)
 
 ## Example Usage
-Since this project uses the GEE package to view and analyze Sentinel-2 data, and the hydrofunctions package to export and analyze stream gage data, there are no data download requirements to run this project's workflow. To run the images workflow (see 'rimorphis_mississippi_images_tortorelli_saslow.ipynb' under Final Blog/Python Notebook), [select a river gage monitoring site](https://dashboard.waterdata.usgs.gov/app/nwd/?region=lower48&aoi=default) to analyze. Find geographical coordinates for a rectangle surrounding your desired study area, and insert coordinates into notebook. Navigate to the notebook's kernel and run all code cells. You may need to adjust wet and dry season start and end dates to reflect the area's actual seasons. 
+Since this project uses the GEE package to view and analyze Sentinel-2 data, and the hydrofunctions package to export and analyze stream gage data, there are no data download requirements to run this project's workflow. To run the images workflow (see 'rimorphis_mississippi_images_tortorelli_saslow.ipynb' under [Final Blog/Python Notebook](https://github.com/AvraSaslow/ea-rimorphis/tree/main/Final%20Blog), [select a river gage monitoring site](https://dashboard.waterdata.usgs.gov/app/nwd/?region=lower48&aoi=default) to analyze. Find geographical coordinates for a rectangle surrounding your desired study area, and insert coordinates into notebook. Navigate to the notebook's kernel and run all code cells. You may need to adjust wet and dry season start and end dates to reflect the area's actual seasons. 
 
 Once you have generated desired images, you can also run the pixel count versus gage data notebook. Navigate to the 'rimorphis_mississippi_pixel_count_vs_gage_plot_tortorelli_saslow' file in the same folder, and insert river gage monitoring site number and coordinates. Run all code cells to generate plots. Depending on what measurements are available for your USGS gage site, you may need to adjust which hydrofunctions function is called (refer to 'hydrofns.py' file in main folder) to export stream gage data. Adjust date variables as desired to study different time periods. 
 
