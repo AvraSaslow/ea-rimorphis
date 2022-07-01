@@ -8,10 +8,10 @@ This workflow utilizes both Google Earth Engine (GEE) and the National Water Inf
 
 ## Table of Contents
 * [Project Purpose and Goals](https://github.com/AvraSaslow/ea-rimorphis#project-purpose-and-goals)
+* [Repository Organization](https://github.com/AvraSaslow/ea-rimorphis#repository-organization)
 * [Data Sources](https://github.com/AvraSaslow/ea-rimorphis#data-sources)
 * [Development Environment](https://github.com/AvraSaslow/ea-rimorphis#development-environment)
 * [Workflow](https://github.com/AvraSaslow/ea-rimorphis#workflow)
-* [Notebooks](https://github.com/AvraSaslow/ea-rimorphis#notebooks)
 * [References](https://github.com/AvraSaslow/ea-rimorphis#references)
 * [Contact](https://github.com/AvraSaslow/ea-rimorphis#project-contacts)
 * [Citation](https://github.com/AvraSaslow/ea-rimorphis#zenodo-citation)
@@ -28,6 +28,33 @@ This research sits under the umbrella of a larger research effort called the Riv
 Our piece of research fits into that mission because it evaluates if multiple methods of measurement create a stronger and more accurate model for overbank flooding, rather than relying on a single data point (such as precipitation, or stream gage data).
 
 To narrow our scope of work, we decided to specifically study flood events at 1-3 locations that had both stream gage or stream height data and clear enough satellite images. For this stage in our study, we're simply looking to find if there is any correlation between stream gage/height data and the number of water pixels counted for the same time period in the study area.
+
+## Repository Organization
+
+This repository has a few organizational notebooks that comprise of the project. These include:
+
+* Two folders for all presentations and intermediary reports
+* An assets folder for all images related to the project
+* A folder comprised of exploratory notebooks that were used to develop the analysis:
+  * Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
+  * Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
+  * Time series automation workflow: Automation Workflow.ipynb
+  * Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
+
+given throughout the 
+
+
+Additional "explorations" notebooks have been included showing more of the process completed to finalize the workflow.
+
+Exploratory Notebooks:
+* Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
+* Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
+* Time series automation workflow: Automation Workflow.ipynb
+* Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
+
+Working Notebook:
+* rimorphis_final_project_blog_post_saslow_tortorelli.ipynb
+
 
 ## Data Sources
 ### NWIS Data
@@ -60,33 +87,6 @@ Simply follow the instructions to run this project from source above:
 * Navigate to the kernel in the menu, and run all code cells. It will pause when it gets to the Google Earth Engine code snippet. This will require you to provide credentials for Google Earth Engine and copy an authentication code into the notebook to continue running the notebook.
 
 ![workflow diagram](Assets/workflow.png)
-
-
-## Notebooks
-
-This repository has a few organizational notebooks that comprise of the project. These include:
-
-* Two folders for all presentations and intermediary reports
-* An assets folder for all images related to the project
-* A folder comprised of exploratory notebooks that were used to develop the analysis:
-  * Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
-  * Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
-  * Time series automation workflow: Automation Workflow.ipynb
-  * Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
-
-given throughout the 
-
-
-Additional "explorations" notebooks have been included showing more of the process completed to finalize the workflow.
-
-Exploratory Notebooks:
-* Hydrofunctions workflow: Hydrofunctions Exploratory Notebook.ipynb
-* Google Earth Engine workflow: Google Earth Engine Exploratory Notebook.ipynb
-* Time series automation workflow: Automation Workflow.ipynb
-* Stream Gage vs Sentinel 2 water pixel comparison workflow: Stream Gage vs Sentinel-2 Workflow.ipynb
-
-Working Notebook:
-* rimorphis_final_project_blog_post_saslow_tortorelli.ipynb
 
 
 ## References
