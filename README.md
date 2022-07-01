@@ -1,4 +1,7 @@
 # Earth Lab + RIMORPHIS
+
+# How Much Water Makes a Flood?
+
 Authors: Avra Saslow & Kristen Tortorelli
 
   > This repository is for a research project for improving flood detection with a focus on comparing stream gage discharge data against satellite imagery in order to determine at which point we can detect overbank flooding. We're working in conjunction with the NSF funded project RIMORPHIS to ultimately assist in modeling streamflow and overbank flooding across the US.
